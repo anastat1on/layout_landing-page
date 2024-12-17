@@ -1,3 +1,15 @@
-body {
-  margin: 0;
+@import '/src/styles/blocks/page';
+@import '/src/styles/blocks/header';
+@import '/src/styles/blocks/top-bar';
+@import '/src/styles/blocks/icon';
+@import '/src/styles/blocks/menu';
+@import '/src/styles/blocks/nav';
+
+@media (max-width: 600px) {
+  .header__title {
+    font-size: 16px;
+  }
+  .header__icons {
+    gap: 0;
+  }
 }
