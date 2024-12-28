@@ -2,17 +2,24 @@
   display: block;
   height: 24px;
   width: 24px;
-}
 
-.icon--phone {
-  background-image: url(../pictures/Icon-Phone-call.png);
-  margin-right: 48px;
-}
+  @include on-tablet {
+    height: 32px;
+    width: 32px;
+  }
 
-.icon--burger-menu {
-  background-image: url(../pictures/Icon-Burger-menu.png);
-}
+  &--phone {
+    background: no-repeat;
+    background-image: url(../pictures/Icon-Phone-call.png);
+  }
 
-.icon--close {
-  background-image: url(../pictures/Icon-Close.png);
+  &--burger-menu {
+    background: no-repeat;
+    background-image: url(../pictures/Icon-Burger-menu.png);
+  }
+
+  &--close {
+    background: no-repeat;
+    background-image: url(../pictures/Icon-Close.png);
+  }
 }
